@@ -2,27 +2,27 @@ package com.example;
 
 public class Menu {
     public static void prompt_FirstName() {
-        System.out.println("First Name:");
+        System.out.print("First Name: ");
     }
     public static void prompt_LastName() {
-        System.out.println("Last Name:");
+        System.out.print("Last Name: ");
     }
     public static void prompt_Street() {
-        System.out.println("Street:");
+        System.out.print("Street: ");
     }
     public static void prompt_City() {
-        System.out.println("City:");
+        System.out.print("City: ");
     }
     public static void prompt_State() {
-        System.out.println("State:");
+        System.out.print("State: ");
     }
     public static void prompt_Zip() {
-        System.out.println("Zip:");
+        System.out.print("Zip: ");
     }
     public static void prompt_Telephone() {
-        System.out.println("Telephone:");
+        System.out.print("Telephone: ");
     }
     public static void prompt_Email() {
-        System.out.println("Email:");
+        System.out.print("Email: ");
     }
 }
