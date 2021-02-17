@@ -61,7 +61,7 @@ public class AddressBookApplication3 {
         initAddressBookExercise(ab);
 
         // Read data from file and add to AddressBook
-        init("/Users/tj3407/AddressInputDataFile2.txt", ab);
+        init("../../../AddressInputDataFile2.txt", ab);
         // Iterate through the entries and print in the output
         ab.list();
     }
