@@ -8,8 +8,17 @@ import java.util.Scanner;
 /**
  * Creates a new instance of an AddressBook object and adds 2 AddressEntry with the given data
  * then lists the entries in the output
+ *
+ * @author Tey Jon Sornet
+ * @since February 2021
  */
 public class AddressBookApplication3 {
+    /**
+     * Method to create 2 instances of AddressEntry and adds them
+     * to the AddressBook instance that is passed as a paramter
+     *
+     * @param ab AddressBook instance
+     */
     private static void initAddressBookExercise(AddressBook ab) {
         // Create 1st instance of AddressEntry
         AddressEntry entry1 = new AddressEntry("John", "Doe", "Carlos Bee", "Hayward", "CA", 94544, "555-55-5555", "john@doe.com");
@@ -30,6 +39,14 @@ public class AddressBookApplication3 {
         ab.add(entry2);
     }
 
+    /**
+     * Method to read entries from a file and creates a new AddressEntry
+     * instance for each entry. Also adds the AddressEntry into the
+     * AddressBook instance that was passed as a parameter
+     *
+     * @param filename a String object
+     * @param ab an AddressBook object
+     */
     public static void init(String filename, AddressBook ab) {
         try {
             File file = new File(filename);
@@ -53,6 +70,11 @@ public class AddressBookApplication3 {
         }
     }
 
+    /**
+     * Main method to run the application
+     *
+     * @param args Collection of Strings
+     */
     public static void main(String[] args) {
         // Create an instance of AddressBook
         AddressBook ab = new AddressBook();
@@ -62,6 +84,7 @@ public class AddressBookApplication3 {
 
         // Read data from file and add to AddressBook
         init("../../../AddressInputDataFile2.txt", ab);
+
         // Iterate through the entries and print in the output
         ab.list();
     }

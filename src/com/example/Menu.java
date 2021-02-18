@@ -1,5 +1,11 @@
 package com.example;
 
+/**
+ * Class to prompt user for address book data
+ *
+ * @author Tey Jon Sornet
+ * @since February 2021
+ */
 public class Menu {
     public static void prompt_FirstName() {
         System.out.print("First Name: ");

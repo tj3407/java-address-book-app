@@ -1,6 +1,13 @@
 package com.example;
 import java.util.Scanner;
 
+/**
+ * Class to prompt user for Address Entry info and prints
+ * to System output
+ *
+ * @author Tey Jon Sornet
+ * @since February 2021
+ */
 public class AddressBookApplication {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
